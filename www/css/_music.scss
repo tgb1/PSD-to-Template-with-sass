@@ -1,0 +1,95 @@
+#music {
+  min-height: 960px;
+  background: #f6f6f6;
+  padding-top: 100px;
+}
+
+.cd-list {
+  margin-top: 35px;
+}
+
+.cd-list > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cd-list > ul > li {
+  margin-top: 50px;
+  height: 36px;
+  line-height: 36px;
+}
+
+#music span.h3 {
+  padding-right: 50px;
+}
+
+#music div.h3 {
+  margin: 0;
+  width: 275px;
+  display:inline-block;
+}
+
+#music .btn {
+  margin-top: -15px;
+}
+
+#music .cd-list i {
+  margin: 0;
+  padding: 0;
+  color: $secondary-color;
+  font-size: 15px;
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 55px;
+}
+
+.music-tracklist > ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.music-tracklist > ul > li {
+  width: 575px;
+  margin-top: 11px;
+}
+
+.music-tracklist > ul > li:first-child {
+  margin-top: 40px;
+}
+
+.music-tracklist > ul > li:hover {
+  background: #f1f1f1;
+}
+
+#track {
+  display: inline-block;
+  width: 300px;
+}
+
+#track i {
+  color: $secondary-color;
+}
+
+#music > div > div:nth-child(2) > div.music-player > h2 {
+  margin-top: 0;
+}
+
+#music .music-pl {
+  padding-left: 60px;
+}
+
+#music .music-player {
+  max-width: 100%;
+}
+
+#music .music-player-buttons {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: table;
+}
+
+#music .music-player-buttons .icon:nth-child(2) {
+  margin: 0 100px;
+}

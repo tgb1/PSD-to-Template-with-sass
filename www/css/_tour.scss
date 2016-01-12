@@ -1,0 +1,138 @@
+#tour {
+  min-height: 950px;
+  background: #f1eeed;
+  padding-top: 90px;
+}
+
+#tour-dates {
+  width: 900px;
+  height: 360px;
+  border-top: 2px solid #e4dddb;
+  margin: 75px auto 0;
+  padding-top: 25px;
+  position: relative;
+}
+
+#tour-dates .absolute-vertical {
+  color: #e4dddb;
+  font-size: 50px;
+  height: 100%;
+  position: absolute;
+  line-height: 50px;
+}
+
+#tour-dates .absolute-vertical #left,
+#tour-dates .absolute-vertical #right {
+  width: 18px;
+  height: 51px;
+  @include vmiddle(50px);
+}
+
+#tour-dates ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 740px;
+  width: 325px;
+  overflow:hidden;
+  font-size: 16px;
+  color: $secondary-color;
+  margin-top: -200px;
+  margin-left: 294px;
+}
+
+#tour-dates ul li {
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+
+#tour-dates .tour-past {
+  font-family: $secondaryboldfont;
+}
+
+#tour-dates .tour-active {
+  color: $font-color;
+  font-family: $secondaryboldfont;
+  padding: 15px 0 40px;
+}
+
+#tour-dates .tour-future {
+  color: $primary-color;
+  font-family: $secondaryboldfont;
+}
+
+#tour-dates .tour-circle {
+  position: absolute;
+  margin-left: 0;
+  right: -42px;
+  margin-top: -32px;
+  overflow: hidden;
+}
+
+#tour .tour-item {
+  @include borderimg('../img/border.png', 1px);
+  @include font('Oswald-Bold', 50px);
+  height: 80px;
+  position: relative;
+}
+
+#tour .tour-item:last-child {
+  @include borderimg('../img/border.png', 0px);
+}
+
+#tour .tour-date {
+  display: inline-block;
+  position: relative;
+}
+
+#tour .tour-day {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+#tour .tour-month {
+  @include font('Oswald-Bold', 23px);
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-left: -15px;
+}
+
+#tour .tour-month div:first-child {
+  margin-bottom: -10px;
+}
+
+#tour .tour-ticket {
+  @include font('Oswald', 18px);
+  height: 100%;
+  line-height: 42px;
+  float: right;
+  padding-top: 15px;
+}
+
+#tour .tour-ticket a {
+  padding: 7px 15px;
+}
+
+#tour .tour-location {
+  @include font('Oswald-Light', 30px);
+  display: inline-block;
+  height: 100%;
+  top: 0;
+  margin-left: 15px;
+  position: absolute;
+  padding-top: 5px;
+}
+
+#tour .tour-location:before {
+  content: '';
+  position: relative;
+  width: 13px;
+  height: 41px;
+  top: 10px;
+  border-left: 3px solid red;
+  display: inline-block;
+}

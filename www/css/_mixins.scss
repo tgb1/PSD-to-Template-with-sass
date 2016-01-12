@@ -1,0 +1,38 @@
+@mixin font($font, $fontsize) {
+  font-family: $font;
+  font-size: $fontsize;
+}
+
+@mixin transform($degree) {
+  -o-transform: rotate($degree);
+  -moz-transform: rotate($degree);
+  -webkit-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+  transform: rotate($degree);
+}
+
+@mixin vmiddle($height) {
+  top: 50%;
+  top: -o-calc(50% - #{$height / 2});
+  top: -moz-calc(50% - #{$height / 2});
+  top: -webkit-calc(50% - #{$height / 2});
+  top: -ms-calc(50% - #{$height / 2});
+  top: calc(50% - #{$height / 2});
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -o-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
+@mixin borderimg($path, $height) {
+  border: $height;
+  border-image: url($path) 0 0 100% 0 round;
+  -o-border-image: url($path) 0 0 100% 0 round;
+  -moz-border-image: url($path) 0 0 100% 0 round;
+  -webkit-border-image: url($path) 0 0 100% 0 round;
+  -ms-border-image: url($path) 0 0 100% 0 round;
+}

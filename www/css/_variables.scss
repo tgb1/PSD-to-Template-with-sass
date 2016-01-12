@@ -1,0 +1,45 @@
+// fonts
+$primaryfont: Oswald;
+$secondaryfont: Lora-Regular;
+$tertiaryfont: Oswald-Light;
+
+$primaryboldfont: Oswald-Bold;
+$secondaryboldfont: Lora-Bold;
+
+$primaryifont: Lora-Italic;
+
+// colors
+$font-color: #241c18;
+$primary-color: #826b60;
+$secondary-color: #e4dddb;
+
+// headings
+$h1-fontsize: 100px;
+$h2-fontsize: 36px;
+$h3-fontsize: 30px;
+$h6-fontsize: 18px;
+
+// general
+$borderradius: 0px;
+
+// p
+$pfontsize: 18px;
+
+// img
+$header-bg: url('../img/header-3.jpg') no-repeat;
+
+// header
+$nav-font: Lora-Bold, Rockwell, sans-serif;
+$nav-fontsize: 18px;
+
+.dark-gray {
+  color: $font-color;
+}
+
+.light-white {
+  color: $secondary-color;
+}
+
+.primary-color {
+  color: $primary-color;
+}

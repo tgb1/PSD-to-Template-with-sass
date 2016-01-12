@@ -1,0 +1,80 @@
+footer {
+  min-height: 950px;
+  padding-top: 150px;
+  text-align: center;
+  background: #8c776d url('../img/contact-1.jpg') no-repeat center;
+}
+
+footer h1 {
+  @include font($primaryboldfont, 80px);
+  margin-top: 0;
+}
+
+footer h1:last-child {
+  @include font($primaryboldfont, 72px);
+  color: $secondary-color;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+footer #social {
+  font-size: 38px;
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  margin-left: 30px;
+}
+
+footer .wrapper {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .navbar-right {
+  margin-right: 10px;
+}
+
+footer .navbar-footer > ul > li > a:hover,
+footer .navbar-footer > ul > li > a:focus {
+  background: transparent;
+}
+
+footer .navbar-footer > ul {
+  margin-right: 50px;
+}
+
+footer .navbar-footer > ul > li {
+  width: 100px;
+}
+
+footer .navbar-footer > ul > li > a {
+  color: $secondary-color;
+}
+
+footer .navbar-footer > ul > li.active a:after {
+  content: '';
+  width: 54px;
+  height: 17px;
+  position: relative;
+  background: url(../img/spritesheet.png) no-repeat -5px -5px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .navbar-footer > ul > li:not(:first-child):before {
+  font-family: FontAwesome;
+  content: '\f111';
+  color: $primary-color;
+  font-size: 10px;
+  position: absolute;
+  margin-top: 19px;
+  margin-left: -55px;
+}
+
+footer .footerbotrow {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 450px;
+}

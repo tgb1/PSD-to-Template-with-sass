@@ -1,0 +1,36 @@
+.icon {
+  background: url('../img/spritesheet.png');
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+}
+
+.icon-1 {
+  width: 62px;
+  height: 38px;
+  background-position: -69px -5px;
+}
+
+.icon-1:hover {
+  background-position: -5px -53px;
+}
+
+.icon-2 {
+  width: 32px;
+  height: 45px;
+  background-position: -149px -5px;
+}
+
+.icon-2:hover {
+  background-position: -149px -60px;
+}
+
+.icon-3 {
+  width: 62px;
+  height: 38px;
+  background-position: -77px -53px;
+}
+
+.icon-3:hover {
+  background-position: -5px -101px;
+}

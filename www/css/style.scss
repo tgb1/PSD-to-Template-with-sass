@@ -1,0 +1,212 @@
+// imports
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'icon';
+@import 'header';
+@import 'band';
+@import 'music';
+@import 'tour';
+@import 'footer';
+
+// Bootstrap override
+.container {
+  width: 1500px;
+}
+
+// general
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+//headings
+h1 {
+  @include font($primaryboldfont, $h1-fontsize);
+  font-weight: Bold;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+}
+
+h2 {
+  @include font($primaryfont, $h2-fontsize);
+  color: $font-color;
+}
+
+h3, .h3 {
+  @include font($tertiaryfont, $h3-fontsize);
+  color: $font-color;
+}
+
+h6, .h6 {
+  @include font($primaryifont, $h6-fontsize);
+  color: $primary-color;
+}
+
+// p
+p {
+  @include font($secondaryfont, $pfontsize);
+  color: $font-color;
+}
+
+// form
+label {
+  background: $font-color;
+  border: 6px solid $font-color;
+  color: $secondary-color;
+}
+
+input[type='text'] {
+  background: transparent;
+  border: 5px solid $font-color;
+}
+
+// img
+.btn {
+  height: 45px;
+  width: 100px;
+  border: none;
+  @include border-radius($borderradius);
+  margin-right: 35px;
+  padding: 12px 15px;
+}
+
+// helper classes
+.outer {
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+
+.vertical-text {
+   width: 275px;
+   height: 150px;
+   @include transform(-90deg);
+   position: relative;
+   margin-top: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.vertical-text > ul > li {
+  list-style-type: none;
+  @include font($secondaryboldfont, 12px);
+  color: #e4dddb;
+  float: left;
+}
+
+.vertical-text > ul > li.active {
+  color: $primary-color;
+  float: left;
+}
+
+.vertical-text > ul > li > .vtc > .vt > i {
+  font-size: 12px;
+  margin: 1px 4px 40px;
+}
+
+.vtr {
+  position: relative;
+  left: 140px;
+  margin-top: -55px;
+}
+
+.vt {
+  width: 140px;
+}
+
+.vtc {
+  display: inline-block;
+  width: 300px;
+  height: 36px;
+}
+
+.contains-absolute-vertical {
+  position: relative;
+  width: 100%;
+}
+
+.absolute-vertical {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1500px;
+  font-size: 125px;
+  color: $primary-color;
+  margin: auto;
+}
+
+.absolute-vertical div {
+  position: absolute;
+  @include vmiddle(125px);
+  width: 125px;
+  height: 125px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#dotted {
+  display: inline-block;
+  width: 200px;
+  height: 10px;
+  @include borderimg('../img/border.png', 1px);
+  margin: 0 20px;
+}
+
+#dottedinv {
+  @include borderimg('../img/borderinv.png', 2);
+  margin-bottom: 30px;
+}
+
+// progress-bar
+.progress {
+  position: relative;
+  box-shadow: none;
+  height: 10px;
+  background: #ab9c95;
+  margin-top: 30px;
+  margin-bottom: 75px;
+  overflow: visible;
+}
+
+.progress-bar {
+  background: $secondary-color;
+  position: relative;
+}
+
+.progress-bar:after {
+  position: absolute;
+  right: -17px;
+  top: -12px;
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: url('../img/spritesheet.png') -77px -115px no-repeat;
+}
+
+// tour
+
+#text-vertical {
+  @include transform(-90deg);
+}

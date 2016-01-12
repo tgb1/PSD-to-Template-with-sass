@@ -1,0 +1,43 @@
+// header
+header {
+  min-height: 960px;
+  background: $header-bg;
+}
+
+// nav
+.navbar-default {
+  padding-top: 65px;
+  @include font($nav-font, $nav-fontsize);
+}
+
+#band-navbar > ul > li:not(:first-child):before {
+  font-family: FontAwesome;
+  content: '\f111';
+  color: $primary-color;
+  font-size: 10px;
+  position: absolute;
+  margin-top: 19px;
+  margin-left: -4px;
+}
+
+#band-navbar > ul > li > a {
+  display: inline-block;
+}
+
+#band-navbar > ul > li.active a:after {
+  content: '';
+  width: 54px;
+  height: 17px;
+  position: relative;
+  background: url(../img/spritesheet.png) no-repeat -5px -5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.headerh1 {
+  width: 450px;
+  height: 560px;
+  background: url('../img/header-2.png') no-repeat center;
+  display: table-cell;
+  vertical-align: middle;
+}
